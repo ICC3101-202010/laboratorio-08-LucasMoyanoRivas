@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lab8.Controller;
 
 namespace Lab8
 {
@@ -16,6 +17,8 @@ namespace Lab8
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Form1 form1 = new Form1();
+            ControllerT controllerT = new ControllerT(form1);
             Application.Run(new Form1());
         }
     }
